@@ -236,4 +236,88 @@ body {
   display: block;
   padding-bottom: 1rem;
 }
+
+.spotifyAndReviews__content {
+  max-width: 1500px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.spotifyAndReviews__items {
+  padding: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px;
+      grid-template-columns: 100px;
+  gap: 1.875rem;
+}
+
+@media (min-width: 40em) {
+  .spotifyAndReviews__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .spotifyAndReviews__items {
+    -ms-grid-columns: 100px;
+        grid-template-columns: 100px;
+  }
+}
+
+.spotifyAndReviews__item h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-size: 28px;
+}
+
+.spotifyAndReviews__item h2 span {
+  background: #22272c;
+  padding: 0 10px;
+}
+
+.spotifyAndReviews #itemOne {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.spotifyAndReviews #itemTwo iframe {
+  max-width: 300px;
+}
+
+@media (min-width: 40em) {
+  .spotifyAndReviews #itemTwo {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
+  .spotifyAndReviews #itemTwo iframe {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 64em) {
+  .spotifyAndReviews #itemTwo iframe {
+    max-width: 600px;
+  }
+}
+
+.spotifyAndReviews #itemThree {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
 /*# sourceMappingURL=style.css.map */

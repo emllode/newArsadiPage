@@ -1,0 +1,91 @@
+.spotifyAndReviews {
+
+    &__content {
+
+        max-width: 1500px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin: auto;
+        text-align: center;
+        
+    }
+
+    &__items {
+
+        padding: 5rem;
+        
+        display: grid;
+        grid-template-columns: 100px;
+        gap: 1.875rem;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: 100px;
+        }
+
+        
+    }
+
+  
+
+    &__item {
+
+        h2 {
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 1px solid white; 
+            line-height: 0.1em;
+            margin: 10px 0 20px; 
+            font-size: 28px;
+    
+         } 
+         
+         h2 span { 
+             background:  #22272c;; 
+             padding:0 10px; 
+         }
+    
+      
+
+    }
+
+    #itemOne {
+        grid-column: 1 / span 2;
+        grid-row: 1 ;
+     
+    }
+    #itemTwo {
+
+        iframe {
+            max-width: 300px;
+        }
+
+      
+        @include breakpoint-up(medium) {
+            grid-column: 3 ;
+            grid-row: 1 / span 2;
+
+            iframe {
+                max-width: 400px;
+            }
+
+        }
+
+        @include breakpoint-up(large) {
+            iframe {
+                max-width: 600px;
+            }
+        }
+    
+    }
+
+    #itemThree {
+        grid-column: 1 / span 2 ;
+        grid-row: 2 ;
+
+    } 
+  
+}
