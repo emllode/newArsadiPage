@@ -1,0 +1,58 @@
+.vHeader {
+    
+    height:100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+
+.vheader__fullscreenVideoWrap {
+    position: absolute;;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0.4;
+
+}
+
+.vheader__fullscreenVideoWrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.vHeader__content {     
+    z-index: 1;
+
+    margin-bottom: 10rem;
+
+    h1 {
+        font-size: 82px;
+        margin-bottom: 0;
+        letter-spacing: 4px;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 1.5rem;
+        display: block;
+        padding-bottom: 2rem;
+        letter-spacing: 2px;
+     
+    }
+
+    .btn {
+        background: #34b3a0;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    
+}
+

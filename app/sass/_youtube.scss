@@ -1,0 +1,37 @@
+.youtube {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+  
+
+
+    h2 {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid white; 
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+        font-size: 28px;
+     } 
+     
+     h2 span { 
+         background: #22272c;
+         padding:0 10px; 
+     }
+
+  
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+        
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+                
+        }
+    }
+
+}
+

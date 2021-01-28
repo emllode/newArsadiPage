@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #22272c;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: white; 
+}
+
+
+.container {
+
+    max-width: 1080px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
+    text-align: center;
+}
+
