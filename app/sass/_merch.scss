@@ -1,0 +1,61 @@
+.merch {
+    background-color:  #31373d;
+
+    img {            
+        max-width: 100%;
+        border-radius: 3rem;
+    }
+
+
+
+    .btn {
+        width: 8rem;
+    }
+
+    
+    h1 {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid white; 
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+        font-size: 28px;
+        padding-top: 3rem;
+    } 
+    
+    h1 span { 
+        background:  #31373d; 
+        padding:0 10px; 
+        
+    }
+
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    @include breakpoint-up(medium){
+            flex: 0 0 50%;
+
+            &__tshirts {
+                padding: 0.9375rem;
+
+                img {
+                    max-width: 28rem;
+                }
+            }
+
+
+            &__bags {
+                padding: 0.9375rem;
+
+                img {
+                    max-width: 28rem;
+                }
+            }
+        }
+
+    }
