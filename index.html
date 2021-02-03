@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arsadi</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="/app/sass/style.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+<body id="fullpage">
 
     <!--TODO: 
         *Navbar  
         *contact/book
     --> 
-    
 
+    
+<nav id="navigation">
+ 
+  <a data-scroll href="#youtube">Youtube</a>
+  <a data-scroll href="#spotifyAndReviews">Reviews</a>
+  <a data-scroll href="#spotifyAndReviews">Spotify</a>
+  <a data-scroll href="#merch">Merch</a>
+  <a data-scroll href="#feature" >Social-media</a>
+  <a data-scroll href="#about">About</a>
+  <a data-scroll href="#contact" >Contact</a>
+</nav>
+    
+    
     <header class="vHeader container">
         <div class="vheader__fullscreenVideoWrap">
             <video src="/app/video/CROWD_JUMPS_LIGHTS_PULSE.mov" autoplay="true" loop="true"></video>
@@ -26,13 +38,16 @@
                  maiores obcaecati nam molestias aliquam, alias sit libero minima corrupti, 
                 velit in! Explicabo esse, cumque excepturi eos tenetur quo.</p>
                 <a href="#" class="btn">Read More</a>
-                
-        </div>
+            </div>
         
+            </div>
     </header>
 
+
+   
+
       <!--Social-media section -->
-      <section class="feature">
+      <section class="feature" id="feature">
 
         <div class="feature__content container">
   
@@ -99,7 +114,7 @@
       </section>
 
        <!-- Youtube videos -->
-       <section class="youtube">
+       <section class="youtube" id="youtube">
         <div class="youtube__content container ">
   
           <div class="youtube__text ">
@@ -128,7 +143,7 @@
         </div>    
     </section>
   
-    <section class="about">
+    <section class="about"  id="about">
 
         <div class="container">
         <h2><span>About us</span> </h2>
@@ -154,7 +169,7 @@
 
    
 
- <section class ="spotifyAndReviews">
+ <section class ="spotifyAndReviews" id="spotifyAndReviews">
     <div class="spotifyAndReviews__content">
         <div class="spotifyAndReviews__items">
              <div class="spotifyAndReviews__item" id="itemOne">
@@ -184,7 +199,7 @@
     </div>
  </section>
 
- <section class="merch">
+ <section class="merch" id="merch">
 
     <div class="merch__item container">
 
@@ -232,14 +247,22 @@
     </section>
 
     <!--Contact form-->
-    <section class="getInTouch  ">
+    <section class="contact" id="contact">
+        <form id="form" class="topBefore">
+		
+            <input id="name" type="text" placeholder="NAME">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="submit" type="submit" value="SEND">
+    
+  </form>
         
      </section>
 
 
 
 
-    <script src="script.js"></script>
+    <script src="/app/js/script.js"></script>
     
     
 </body>
