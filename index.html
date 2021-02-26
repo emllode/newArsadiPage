@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arsadi</title>
-    <link href="/app/sass/style.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body id="fullpage">
 
-    <!--TODO: 
-        *Navbar  
-        *contact/book
-    --> 
+  <div class="navbarMenu">
+    <!--<div class="overlay has-fade"></div> -->
 
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        
+
+        <a id="btnHamburger" href="#" class="navbarMenu__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="navbarMenu__links hide-for-mobile">
+          <a data-scroll href="#feature">Youtube</a>
+          <a data-scroll href="#about">Reviews</a>
+          <a data-scroll href="#about">Spotify</a>
+          <a data-scroll href="#merch">Merch</a>
+          <a data-scroll href="#feature" >Social-media</a>
+          <a data-scroll href="#about">About</a>
+          <a data-scroll href="#contact" >Contact</a>
+        </div>
+    </nav>
+
+    <div class="navbarMenu__menu has-fade"> 
+      <a data-scroll href="#feature">Youtube</a>
+      <a data-scroll href="#about">Reviews</a>
+      <a data-scroll href="#about">Spotify</a>
+      <a data-scroll href="#merch">Merch</a>
+      <a data-scroll href="#feature" >Social-media</a>  
+      <a data-scroll href="#about">About</a>
+      <a data-scroll href="#contact" >Contact</a>
+    </div>
+  </div>
+
+
+  
     
-<nav id="navigation">
- 
-  <a data-scroll href="#youtube">Youtube</a>
-  <a data-scroll href="#spotifyAndReviews">Reviews</a>
-  <a data-scroll href="#spotifyAndReviews">Spotify</a>
-  <a data-scroll href="#merch">Merch</a>
-  <a data-scroll href="#feature" >Social-media</a>
-  <a data-scroll href="#about">About</a>
-  <a data-scroll href="#contact" >Contact</a>
-</nav>
-    
-    
-    <header class="vHeader container">
+    <div class="vHeader container">
         <div class="vheader__fullscreenVideoWrap">
-            <video src="/app/video/CROWD_JUMPS_LIGHTS_PULSE.mov" autoplay="true" loop="true"></video>
+            <video  src="/app/video/CROWD_JUMPS_LIGHTS_PULSE.mov" autoplay="true" loop="true"></video>
         </div>
         <div class="vHeader__overlay"></div>
         <div class="vHeader__content">
             <h1>Arsadi</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eligendi ipsa,
-                 maiores obcaecati nam molestias aliquam, alias sit libero minima corrupti, 
-                velit in! Explicabo esse, cumque excepturi eos tenetur quo.</p>
-                <a href="#" class="btn">Read More</a>
+            <p> We are a Swedish pop group formed in 2016 by Anthony Bachtiar on vocals and keyboard, 
+              Feria Hikmet and Nils Öberg on guitar and bass, and Pedram Effati on drums. The, 
+              nowadays, former students from the university town Uppsala try to push their pop songs in new and exciting directions. </p>
+                <a href="#about" class="btn">Read More</a>
             </div>
         
             </div>
-    </header>
+          </div>
 
 
    
@@ -55,7 +74,7 @@
             <div class="feature__grid">
               
               <div class="feature__item">
-                <a href="https://www.youtube.com/channel/UCMXraHIHxkhu1y1hidM4Hkg">
+                <a href="https://www.youtube.com/channel/UCMXraHIHxkhu1y1hidM4Hkg" target="_blank">
                   <img alt="ArsadiYoutube" class="feature__icon" src="/images/icons/Youtube-image.svg"
                   width="150" height="70">
                </a>
@@ -69,7 +88,7 @@
               </div>
         
               <div class="feature__item">
-                <a href="https://open.spotify.com/artist/30PReAPlWzpwfF2OJYiZ4N">
+                <a href="https://open.spotify.com/artist/30PReAPlWzpwfF2OJYiZ4N" target="_blank">
                   <img alt="ArsadiSpotify" class="feature__icon" src="/images/icons/Spotify-image.svg"
                   width="150" height="70">
                </a>
@@ -82,7 +101,7 @@
               </div>
         
               <div class="feature__item">
-                <a href="https://www.instagram.com/arsadimusic">
+                <a href="https://www.instagram.com/arsadimusic" target="_blank">
                   <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Instagram-image.svg"
                   width="150" height="70">
                </a>
@@ -95,7 +114,7 @@
               </div>
   
               <div class="feature__item">
-                <a href="https://www.instagram.com/arsadimusic">
+                <a href="https://www.instagram.com/arsadimusic" target="_blank">
                   <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Facebook-image.svg"
                   width="150" height="70">
                </a>
@@ -168,7 +187,6 @@
     </section>
 
    
-
  <section class ="spotifyAndReviews" id="spotifyAndReviews">
     <div class="spotifyAndReviews__content">
         <div class="spotifyAndReviews__items">
@@ -181,10 +199,6 @@
                    scented melodic pop that captures you to a different place. It doesn’t have to be more difficult than that.
                     Listen for yourself.</p>
             </div>
-            <div class="spotifyAndReviews__item" id="itemTwo">
-                <iframe src="https://open.spotify.com/embed/artist/30PReAPlWzpwfF2OJYiZ4N" width="600" height="330" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-
             <div class="spotifyAndReviews__item" id="itemThree">
                 <h2><span>HYMN.SE</span></h2>
                 <p>“‘Green Walls’ is a retro-scenting soul-pop-caramel [...] Feather-light and sweet gospel 
@@ -193,6 +207,10 @@
                    scented melodic pop that captures you to a different place. It doesn’t have to be more difficult than that.
                     Listen for yourself.</p>       
             </div>
+
+            <div class="spotifyAndReviews__item" id="itemTwo">
+              <iframe src="https://open.spotify.com/embed/artist/30PReAPlWzpwfF2OJYiZ4N" width="600" height="330" frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
 
         </div>
         

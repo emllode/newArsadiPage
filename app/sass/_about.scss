@@ -1,25 +1,23 @@
 .about {
+	padding: 20px 0;
+	background-color: #31373d;
 
-    padding: 20px 0;
-    background-color: #31373d;
-    
-    h2 {
-        width: 100%; 
-        text-align: center; 
-        border-bottom: 1px solid white; 
-        line-height: 0.1em;
-        margin: 10px 0 20px; 
-        font-size: 28px;
-     } 
-     
-     h2 span { 
-         background: #31373d;
-         padding:0 10px; 
-     }
+	h2 {
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid white;
+		line-height: 0.1em;
+		margin: 10px 0 20px;
+		font-size: 28px;
+	}
 
-    p {
-        font-size: 24px;
-        display: block;
-        padding-bottom: 1rem;
-    }
+	h2 span {
+		background: #31373d;
+		padding: 0 10px;
+	}
+
+	p {
+		display: block;
+		padding-bottom: 1rem;
+	}
 }

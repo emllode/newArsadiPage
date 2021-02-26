@@ -1,12 +1,13 @@
-@import "global";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
+@import 'animations';
 
-
-@import "navigation";
-@import "header";
-@import "feature";
-@import "youtube";
-@import "about";
-@import "spotifyAndReviews";
-@import "merch";
-@import "contact";
+@import 'global';
+@import 'navbarMenu';
+@import 'header';
+@import 'feature';
+@import 'youtube';
+@import 'about';
+@import 'spotifyAndReviews';
+@import 'merch';
+@import 'contact';
