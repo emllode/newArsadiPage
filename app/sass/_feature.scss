@@ -17,22 +17,17 @@
 		text-align: left;
 	}
 
-	&__intro {
-		margin-bottom: 3.75rem;
-
-		@include breakpoint-up(large) {
-			width: 15%;
-		}
-	}
-
 	&__grid {
 		@include breakpoint-up(medium) {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 2rem;
 		}
 	}
 
 	&__item {
+		margin: -25px;
 		@include breakpoint-up(medium) {
 			flex: 0 0 50%;
 		}
@@ -47,6 +42,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
+		margin-top: 2rem;
 
 		@include breakpoint-up(large) {
 			margin-bottom: 2.75rem;
