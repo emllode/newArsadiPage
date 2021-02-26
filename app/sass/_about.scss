@@ -16,8 +16,33 @@
 		padding: 0 10px;
 	}
 
+	.about__imgandtext {
+		position: relative;
+		text-align: center;
+
+		h3 {
+			position: absolute;
+			font-size: 50px;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			-webkit-text-stroke: 1px black;
+		}
+	}
+
 	p {
 		display: block;
 		padding-bottom: 1rem;
+	}
+}
+
+.imagewithtext {
+	min-width: 50rem;
+	max-height: 55rem;
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
 	}
 }

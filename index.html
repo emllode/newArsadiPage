@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsadi</title>
+    <link rel="icon" href="app/img/favicon-32x32.png"> <!-- favicon, glöm inte ladda in i mappen-->
+    <title> ARSADI - Offical </title>
     <link href="/css/style.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body id="fullpage">
 
@@ -21,25 +24,20 @@
           <span></span>
         </a>
 
-        <div class="navbarMenu__links hide-for-mobile">
-          <a data-scroll href="#feature">Youtube</a>
-          <a data-scroll href="#about">Reviews</a>
-          <a data-scroll href="#about">Spotify</a>
-          <a data-scroll href="#merch">Merch</a>
-          <a data-scroll href="#feature" >Social-media</a>
-          <a data-scroll href="#about">About</a>
-          <a data-scroll href="#contact" >Contact</a>
+        
+        <div class="navbarMenu__links hide-for-mobile container">
+          <a data-scroll href="#feature">MUSIC</a>
+          <a data-scroll href="#merch">MERCH</a>
+          <a data-scroll href="#about">ABOUT</a>
+       
         </div>
     </nav>
 
     <div class="navbarMenu__menu has-fade"> 
-      <a data-scroll href="#feature">Youtube</a>
-      <a data-scroll href="#about">Reviews</a>
-      <a data-scroll href="#about">Spotify</a>
-      <a data-scroll href="#merch">Merch</a>
-      <a data-scroll href="#feature" >Social-media</a>  
-      <a data-scroll href="#about">About</a>
-      <a data-scroll href="#contact" >Contact</a>
+      <a data-scroll href="#feature">MUSIC</a>
+      <a data-scroll href="#merch">MERCH</a>
+      <a data-scroll href="#about">ABOUT</a>
+  
     </div>
   </div>
 
@@ -50,13 +48,48 @@
         <div class="vheader__fullscreenVideoWrap">
             <video  src="/app/video/CROWD_JUMPS_LIGHTS_PULSE.mov" autoplay="true" loop="true"></video>
         </div>
-        <div class="vHeader__overlay"></div>
-        <div class="vHeader__content">
+        <div class="vHeader__content container">
             <h1>Arsadi</h1>
-            <p> We are a Swedish pop group formed in 2016 by Anthony Bachtiar on vocals and keyboard, 
-              Feria Hikmet and Nils Öberg on guitar and bass, and Pedram Effati on drums. The, 
-              nowadays, former students from the university town Uppsala try to push their pop songs in new and exciting directions. </p>
-                <a href="#about" class="btn">Read More</a>
+
+            <div class="feature__content ">
+  
+     
+              <div class="feature__grid">
+                
+                <div class="feature__item">
+                  <a href="https://www.youtube.com/channel/UCMXraHIHxkhu1y1hidM4Hkg" target="_blank">
+                    <img alt="ArsadiYoutube" class="feature__icon" src="/images/icons/Youtube-image.svg"
+                    width="150" height="70">
+                 </a>                 
+                </div>
+          
+                <div class="feature__item">
+                  <a href="https://open.spotify.com/artist/30PReAPlWzpwfF2OJYiZ4N" target="_blank">
+                    <img alt="ArsadiSpotify" class="feature__icon" src="/images/icons/Spotify-image.svg"
+                    width="150" height="70">
+                 </a>
+                </div>
+          
+                <div class="feature__item">
+                  <a href="https://www.instagram.com/arsadimusic" target="_blank">
+                    <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Instagram-image.svg"
+                    width="150" height="70">
+                 </a>
+                </div>
+    
+                <div class="feature__item">
+                  <a href="https://www.instagram.com/arsadimusic" target="_blank">
+                    <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Facebook-image.svg"
+                    width="150" height="70">
+                 </a>
+                </div>
+          
+      
+          
+              </div>
+          </div>
+            
+              <!--  <a href="#about" class="btn">Read More</a>>-->
             </div>
         
             </div>
@@ -65,72 +98,6 @@
 
    
 
-      <!--Social-media section -->
-      <section class="feature" id="feature">
-
-        <div class="feature__content container">
-  
-     
-            <div class="feature__grid">
-              
-              <div class="feature__item">
-                <a href="https://www.youtube.com/channel/UCMXraHIHxkhu1y1hidM4Hkg" target="_blank">
-                  <img alt="ArsadiYoutube" class="feature__icon" src="/images/icons/Youtube-image.svg"
-                  width="150" height="70">
-               </a>
-                <div class="feature__title">
-                  Youtube
-                </div>
-                <div class="feature__description">
-                  Subscribe to our channel 
-                </div>  
-                
-              </div>
-        
-              <div class="feature__item">
-                <a href="https://open.spotify.com/artist/30PReAPlWzpwfF2OJYiZ4N" target="_blank">
-                  <img alt="ArsadiSpotify" class="feature__icon" src="/images/icons/Spotify-image.svg"
-                  width="150" height="70">
-               </a>
-                <div class="feature__title">
-                  Spotify
-                </div>
-                <div class="feature__description">
-                 Listen to us on Spotify
-                </div>
-              </div>
-        
-              <div class="feature__item">
-                <a href="https://www.instagram.com/arsadimusic" target="_blank">
-                  <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Instagram-image.svg"
-                  width="150" height="70">
-               </a>
-                <div class="feature__title">
-                  Instagram
-                </div>
-                <div class="feature__description">
-                  Follow us on Instagram 
-                </div>
-              </div>
-  
-              <div class="feature__item">
-                <a href="https://www.instagram.com/arsadimusic" target="_blank">
-                  <img alt="ArsadiInstagram" class="feature__icon" src="/images/icons/Facebook-image.svg"
-                  width="150" height="70">
-               </a>
-                <div class="feature__title">
-                  Facebook
-                </div>
-                <div class="feature__description">
-                  Follow us on Facebook
-                </div>
-              </div>
-        
-    
-        
-            </div>
-        </div>
-      </section>
 
        <!-- Youtube videos -->
        <section class="youtube" id="youtube">
@@ -164,8 +131,12 @@
   
     <section class="about"  id="about">
 
-        <div class="container">
-        <h2><span>About us</span> </h2>
+        <div class="about__imgandtext container">
+          <div class="imagewithtext container">
+          <img src="app/img/DSC08344.jpg"> 
+        <h3>About us </h3>
+        </div>
+        
 
         <p>ARSADI is a Swedish pop group formed in 2016 by Anthony Bachtiar on vocals and keyboard, 
             Feria Hikmet and Nils Öberg on guitar and bass, and Pedram Effati on drums. The, 
