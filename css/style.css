@@ -335,7 +335,8 @@ a:hover {
 
 .vHeader__content h1 {
   font-size: 82px;
-  letter-spacing: 4px;
+  font-weight: bold;
+  letter-spacing: 15px;
   font-weight: bolder;
   text-align: center;
 }
@@ -414,6 +415,10 @@ a:hover {
   margin-right: auto;
   width: 50%;
   margin-top: 2rem;
+}
+
+.feature__icon:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 64em) {

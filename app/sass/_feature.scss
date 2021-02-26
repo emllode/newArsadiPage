@@ -44,6 +44,10 @@
 		width: 50%;
 		margin-top: 2rem;
 
+		&:hover {
+			transform: scale(1.2);
+		}
+
 		@include breakpoint-up(large) {
 			margin-bottom: 2.75rem;
 		}
